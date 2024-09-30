@@ -1,0 +1,521 @@
+/* #region global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  color: #ffff;
+  font-family: "Playfair Display", serif;
+  line-height: 2;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pd10 {
+  padding: 10px;
+}
+
+.pd20 {
+  padding: 20px;
+}
+
+.pt40 {
+  padding-top: 40px;
+}
+
+.pb50 {
+  padding-bottom: 50px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.wrapper-xs {
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper-s {
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper-m {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper-l {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper-xl {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper-xxl {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: #ffff;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+/* #endregion */
+
+/* #region header */
+
+header {
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/img1.jpg) center/cover no-repeat;
+}
+
+header .fa-solid {
+  display: none;
+}
+
+header .navigation {
+  list-style: none;
+}
+
+header .navigation li {
+  margin-right: 50px;
+}
+
+/* #endregion */
+
+/* #region homepage section */
+
+.homepage {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 140px;
+}
+
+.homepage .homepage-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.homepage .homepage-content h3 {
+  border-top: 2px solid #ffff;
+  border-bottom: 2px solid #ffff;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.homepage .homepage-content button {
+  color: #ffff;
+  background-color: transparent;
+  border: 1px solid #ffff;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.homepage .homepage-content button:hover {
+  cursor: pointer;
+}
+
+/* #endregion */
+
+/* #region about section */
+
+.about-section .about-container {
+  color: black;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.about-section .about-container .about-image {
+  align-items: center;
+}
+
+.about-image img {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+}
+
+/* #endregion */
+
+/* #region products section */
+
+.products-section {
+  color: #ffff;
+  background-color: #333;
+}
+
+.products-section p {
+  color: #b3abab;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.products-section .products-container {
+  align-items: center;
+  text-align: center;
+}
+
+.products-container .products-intro hr {
+  width: 10%;
+  height: 2px;
+}
+
+.products-container .products-content {
+  flex-wrap: wrap;
+}
+
+.products-content .product {
+  width: 33%;
+}
+
+/* #endregion */
+
+/* #region contact section */
+
+.contact-section {
+  color: #333;
+}
+
+.contact-section .contact-container {
+  align-items: center;
+}
+
+.contact-section .contact-container form {
+  align-items: center;
+  gap: 30px;
+}
+
+.contact-section .contact-container form input[type="email"] {
+  width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid #b3abab;
+}
+
+.contact-section .contact-container form button {
+  width: 150px;
+  padding: 15px 5px 15px 5px;
+  font-size: 16px;
+  color: white;
+  background-color: rgb(10 139 235);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-section .contact-container form button:hover {
+  color: rgb(10 139 235);
+  background-color: white;
+  border: 2px solid rgb(10 139 235);
+}
+
+/* #endregion */
+
+/* #region footer */
+
+footer {
+  color: #ffff;
+  background-color: #333;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+footer span a {
+  margin-right: 20px;
+}
+
+footer span a:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* #endregion */
+
+/* #region media query for tablet screen sizes */
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  body {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  /* home section */
+
+  header nav {
+    padding: 10px;
+  }
+
+  header .fa-solid {
+    display: block;
+  }
+
+  header .navigation {
+    display: none;
+  }
+
+  .homepage {
+    margin-top: 120px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .homepage .homepage-content h3 {
+    width: 30%;
+  }
+
+  .homepage .homepage-content button {
+    padding: 10px;
+    font-size: 15px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* about section */
+
+  .about-section .about-container {
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .about-section .about-container .about-content {
+    width: 99%;
+  }
+
+  .about-section .about-container .about-content h2 {
+    font-size: 18px;
+  }
+
+  .about-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+
+  /* products section */
+
+  .products-content .product {
+    width: 49%;
+  }
+
+  .products-content .product i {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+
+  /* contact section */
+
+  .contact-section .contact-container h2 {
+    font-size: 18px;
+  }
+
+  .contact-section .contact-container form {
+    gap: 20px;
+  }
+
+  .contact-section .contact-container form input[type="email"] {
+    width: 300px;
+    font-size: 14px;
+  }
+
+  .contact-section .contact-container form button {
+    width: 80px;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  /* footer section */
+
+  footer {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  footer span:first-child {
+    padding-top: 15px;
+  }
+
+  footer span a {
+    margin-right: 15px;
+  }
+
+  footer span a:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+/* #endregion */
+
+/* #region media query for phone screen sizes */
+
+@media only screen and (min-width: 321px) and (max-width: 426px) {
+  body {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  /* home section */
+
+  header nav {
+    padding: 10px;
+  }
+
+  header .fa-solid {
+    display: block;
+  }
+
+  header .navigation {
+    display: none;
+  }
+
+  .homepage {
+    margin-top: 80px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .homepage .homepage-content button {
+    padding: 10px;
+    font-size: 13px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* about section */
+
+  .about-section .about-container {
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .about-section .about-container .about-content {
+    width: 99%;
+  }
+
+  .about-section .about-container .about-content h2 {
+    font-size: 16px;
+  }
+
+  .about-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  /* products section */
+
+  .products-content .product {
+    width: 99%;
+  }
+
+  .products-content .product i {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  /* contact section */
+
+  .contact-section .contact-container h2 {
+    font-size: 16px;
+  }
+
+  .contact-section .contact-container form {
+    gap: 15px;
+  }
+
+  .contact-section .contact-container form input[type="email"] {
+    width: 230px;
+    font-size: 12px;
+  }
+
+  .contact-section .contact-container form button {
+    width: 80px;
+    font-size: 12px;
+    padding: 8px;
+    border-radius: 5px;
+  }
+
+  /* footer section */
+
+  footer {
+    font-size: 12px;
+    padding: 2px;
+  }
+
+  footer span:first-child {
+    padding-top: 10px;
+  }
+
+  footer span a {
+    margin-right: 10px;
+  }
+
+  footer span a:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+/* #endregion */
